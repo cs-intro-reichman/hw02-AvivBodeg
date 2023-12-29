@@ -4,7 +4,7 @@
  */
 public class Reverse {
     public static void main(String[] args) {
-        String str = "abc";//args[0];
+        String str = args[0];
         String reversed = "";
         int len = str.length();
 
