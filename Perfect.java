@@ -8,12 +8,15 @@ public class Perfect {
         int num = Integer.parseInt(args[0]);
         String output = num + " is a perfect number since " + num + " = 1";
         int sum = 1;
+
+        //find all divisors
         for (int i = 2; i < num; i++) {
             if (num % i == 0) {
                 sum += i;
                 output = output + " + " + i;
             }
         }
+
         if (sum == num) {
             System.out.println(output);
         } else {

@@ -8,10 +8,12 @@ public class DamkaBoard {
         String evenRow = "";
         String oddRow = "";
 
+        //create rows
         for (int i = 0; i < size; i++) {
             oddRow += "* ";
             evenRow += " *";
         }
+        //prints rows
         for (int i = 1; i <= size; i++) {
             if (i % 2 == 0) {
                 System.out.println(evenRow);

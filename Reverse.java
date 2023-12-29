@@ -4,7 +4,7 @@
  */
 public class Reverse {
     public static void main(String[] args) {
-        String str = args[0];
+        String str = "abc";//args[0];
         String reversed = "";
         int len = str.length();
 
@@ -13,6 +13,6 @@ public class Reverse {
         }
 
         System.out.println(reversed);
-        System.out.println("The middle character is " + str.charAt(len / 2));
+        System.out.println("The middle character is " + str.charAt((len - 1 )/ 2));
     }
 }
